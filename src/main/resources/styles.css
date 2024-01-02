@@ -1,0 +1,302 @@
+.label{
+	   -fx-font-size: 16px;
+	    -fx-font-family: "Verdana";
+
+}
+
+
+
+.table-view .label{
+	   -fx-font-size: 14px;
+
+}
+
+.tab-pane{
+	 -fx-pref-width: 700px;
+	 -fx-pref-height: 800px;
+}
+
+.tab:selected{
+	-fx-background-color: #4682A9;
+	 	-fx-text-fill: #F6F4EB;
+	
+}
+
+.tab:selected  .tab-label{
+ 	-fx-text-fill: #F6F4EB;
+
+}
+.tab  .tab-label, .tab:hover .tab-label{
+ 	-fx-text-fill: black;
+	-fx-font-size: 16px;
+	 -fx-font-family: "Verdana";
+}
+
+
+.tab:hover{
+	-fx-background-color: #91C8E4;
+}
+
+
+
+.title {
+    -fx-font-family: "Times New Roman";
+    -fx-font-weight: 300;
+    -fx-font-size: 40px;
+    -fx-padding: 10 5 40 5;
+}
+
+.tab{
+  	-fx-background-color: transparent, tab-border-color , tab-color;
+    tab-color: linear-gradient(light-tab-color, dark-tab-color) ;
+    tab-border-color : #A2A2A2;
+    dark-tab-color: #d3e9f5 ;
+    light-tab-color: #d3e9f5 ;
+    -fx-background-insets: 0, 0 5 0 0, 1 6 0 0 ;
+    -fx-padding: 4 10 4 4 ;
+    //-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 15, 0, 0, -5);
+     -fx-background-radius: 10 10 0 0;
+	 -fx-border-radius: 10 10 0 0;
+}
+
+.header{
+    -fx-alignment: center;
+    -fx-padding: 20;
+
+}
+
+.grid-pane {
+	-fx-padding: 20px 0 0 0;
+    -fx-alignment: center;
+
+}
+
+
+
+.table-view{
+	-fx-background-color: #F6F4EB;
+	
+}
+
+.table-row-cell:even {
+    -fx-background-color: #d3e9f5;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #F6F4EB;
+}
+
+.table-row-cell{
+    -fx-border-color: #4682A9; 
+ 	 -fx-border-width: 1px 0px 0px 0px;
+}
+
+.table-row-cell:hover{
+	    -fx-background-color: #91C8E4;
+	
+}
+ .table-view .table-cell {
+ 	  -fx-border-color: #4682A9; 
+ 	  -fx-border-width: 0px 1px 0px 0px;
+ 	  -fx-font-size: 18px; /* Adjust the font size as needed */
+ 	  
+ }
+ 
+ .table-row-cell:selected .table-cell{
+ 	-fx-text-fill: #000000;
+ 	
+ }
+  .table-row-cell:selected{
+  	 -fx-background-color: #749BC2
+  }
+ 
+//
+//.table-view .column-header-background .label {
+//    -fx-text-fill: #8FE191; /* Example background color */
+//}
+//.tab-pane .tab-header-area {
+//    -fx-background-color: #f0f0f0; /* Light grey background */
+//    -fx-padding: 5px; /* Padding around the tab headers */
+//    -fx-border-color: #c0c0c0; /* Border color */
+//    -fx-border-width: 0 0 1px 0; /* Border only at the bottom */
+//}
+
+ .headers-region {
+    -fx-spacing: 60px; /* Space between tabs */
+    -fx-alignment: center; /* Align the tabs to the center */
+}
+
+.right-pane{
+	 -fx-border-color: #c0c0c0; /* Border color */
+    -fx-border-width: 0 0 0 1px ; /* Border only at the bottom */
+    -fx-background-color: #F6F4EB;
+    -fx-pref-width: 800px;
+	 -fx-pref-height: 820px;
+	    -fx-alignment: center;
+	    -fx-padding: 5px 20px 20px 20px;
+
+}
+
+.table-cell {
+    -fx-font-size: 10pt;
+    -fx-padding: 5 3 5 3;
+}
+.combo-box{
+	 -fx-border-color: black; 
+ 	 -fx-border-width: 1px;
+ 	 -fx-background-color: white;
+	 -fx-pref-width: 200px;
+	 //-fx-min-height: 30px;
+	 	 
+	
+}
+
+/* CSS for TextField */
+.text-field:hover {
+    -fx-border-color: #91C8E4; /* Change to your desired hover border color */
+}
+
+/* CSS for ComboBox */
+.combo-box-base:hover {
+    -fx-border-color: #91C8E4; /* Change to your desired hover border color */
+}
+
+
+.combo-box .list-cell {
+    -fx-font-size: 16px; /* Adjust the font size as needed */
+}
+
+.text-field {
+    -fx-font-size: 16px; /* Adjust the font size as needed */
+}
+
+.fields-pane{
+	 -fx-pref-width: 300px;
+	 -fx-min-height: 300px;
+	    -fx-alignment: center;
+	    fx-gap: 10px;
+
+}
+
+
+.button{
+	 -fx-font-size: 16px;
+	 -fx-background-color: #91C8E4;
+	 -fx-pref-width: 200px;
+	 -fx-pref-height: 30px;
+	 -fx-border-color: black; 
+	 -fx-border-width: 1px;
+	 -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0, 0, 5);
+	 -fx-background-radius: 5;
+	 -fx-border-radius: 5;
+	 -fx-font-size: 16px;
+	 -fx-font-weight: 200;
+	 
+}
+
+.button:hover{
+	-fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 10, 0, 0, 5);
+	
+}
+
+.button:pressed{
+			 -fx-background-color: #749BC2;
+		
+}
+
+
+*{
+	//-fx-font-family: Arial, sans-serif;
+}
+.table-view .row-header {
+    -fx-background-color: #f0f0f0; /* Example background color */
+    -fx-alignment: center; /* Center alignment */
+    /* Add other styling properties as needed */
+
+
+}
+
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: gray;
+    -fx-border-width: 1px;
+}
+
+.text-field:focused {
+    -fx-border-color: #4682A9;
+}
+
+.text-field:disabled {
+    -fx-opacity: 0.5;
+}
+
+.signiture{
+    -fx-font-size: 40px;
+
+}
+ .description{
+//	-fx-pref-width: 100px;
+//	-fx-pref-height: 100px;
+    -fx-font-size: 25px;
+}
+.signiture:hover, .description:hover{
+	-fx-text-fill: #4682A9 ;
+
+}
+
+
+
+.warning{
+	-fx-underline: true;
+	-fx-text-fill: #f00;
+    -fx-font-size: 16px;
+	-fx-padding: 20px;
+	-fx-min-height: 80px;
+	
+   // -fx-border-insets: 20px;
+   // -fx-background-insets: 20px;
+	
+}
+
+.context-menu {
+    -fx-background-color: #F6F4EB;
+}
+
+.context-menu .label {
+        -fx-font-size: 14px;
+    
+}
+
+.menu-item {
+    -fx-text-fill: #4682A9;
+}
+
+.menu-item:focused {
+    -fx-background-color: #b0c4de;
+}
+
+.menu-item:hover {
+    -fx-background-color: #4682A9;
+}
+
+.menu-item:disabled {
+    -fx-opacity: 0.5;
+}
+
+.warning-node{
+	 -fx-border-color: red; 
+ 	 -fx-border-width: 1px;
+}
+
+.warning-node:hover{
+	 -fx-border-color: red; 
+	 -fx-border-width: 1px;
+}
+.info{
+	-fx-underline: true;
+	-fx-text-fill: blue;
+    -fx-font-size: 16px;
+	-fx-padding: 10px 0px 0px 0px;
+}
+
+
