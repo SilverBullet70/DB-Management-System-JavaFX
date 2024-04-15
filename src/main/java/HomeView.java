@@ -30,6 +30,11 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class HomeView extends Application {
+	
+	public static void main(String[] args) {
+		launch(args);
+
+	}
 
 	private static List<Node> warningNode = new ArrayList<Node>();
 	private static Label warnings = new Label();
@@ -130,11 +135,6 @@ public class HomeView extends Application {
 
 		}
 		return isNull;
-	}
-
-	public static void main(String[] args) {
-		launch(args);
-
 	}
 
 	@Override

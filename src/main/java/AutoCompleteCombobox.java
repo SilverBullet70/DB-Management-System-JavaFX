@@ -2,9 +2,6 @@
 
 import java.util.List;
 
-import com.sun.javafx.scene.control.skin.ComboBoxListViewSkin;
-
-
 import javafx.application.Platform;
 import javafx.beans.Observable;
 import javafx.beans.property.BooleanProperty;
@@ -15,12 +12,9 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
 import javafx.scene.control.ComboBox;
-import javafx.scene.control.Control;
-import javafx.scene.control.ListView;
 import javafx.scene.input.KeyEvent;
 
 
-@SuppressWarnings("restriction")
 public class AutoCompleteCombobox {
 	public static class HideableItem<T> {
 		private final ObjectProperty<T> object = new SimpleObjectProperty<>();
@@ -90,20 +84,7 @@ public class AutoCompleteCombobox {
 		});
 
 		comboBox.showingProperty().addListener((observable, oldValue, newValue) -> {
-			if (newValue) {
-				@SuppressWarnings({ "unchecked" })
-				ListView<HideableItem<T>> lv = ((ComboBoxListViewSkin<HideableItem<T>>) comboBox.getSkin()).getListView();
-
-				Platform.runLater(() -> {
-					if (selectedItem[0] == null) // first use
-					{
-						double cellHeight = ((Control) lv.lookup(".list-cell")).getHeight();
-						lv.setFixedCellSize(cellHeight);
-					}
-				});
-
-				lv.scrollTo(comboBox.getValue());
-			} else {
+			if (!newValue) {
 				HideableItem<T> value = comboBox.getValue();
 				if (value != null)
 					selectedItem[0] = value;
